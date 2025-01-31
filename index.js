@@ -1,4 +1,4 @@
-// server.js
+
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -10,8 +10,8 @@ app.use(express.json()); // Parse JSON requests
 // Basic information data
 const basicInfo = {
   email: "tsafarialadin@gmail.com",
-  github_url: "https://github.com/NoobMaester",
-  current_datetime: new Date().toISOString()
+  current_datetime: new Date().toISOString(),
+  github_url: "https://github.com/NoobMaester/myAPI/"
 };
 
 // GET endpoint for basic information
