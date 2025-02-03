@@ -11,7 +11,7 @@ app.use(express.json()); // Parse JSON requests
 const basicInfo = {
   email: "tsafarialadin@gmail.com",
   current_datetime: new Date().toISOString(),
-  github_url: "<https://github.com/NoobMaester/myAPI/>"
+  github_url: "https://github.com/NoobMaester/myAPI/"
 };
 
 // GET endpoint for basic information
