@@ -7,19 +7,15 @@ const app = express();
 app.use(cors()); // Enable CORS
 app.use(express.json()); // Parse JSON requests
 
-// Basic information data
-const basicInfo = {
-  email: "tsafarialadin@gmail.com",
-  current_datetime: new Date().toISOString(),
-  github_url: "https://github.com/NoobMaester/myAPI/"
-};
 
 // GET endpoint for basic information
 app.get('/api/info', (req, res) => {
   res.status(200).json({
-    success: true,
-    data: basicInfo
-  });
+      email: "tsafarialadin@gmail.com",
+      current_datetime: new Date().toISOString(),
+      github_url: "https://github.com/NoobMaester/myAPI/"
+    }
+  );
 });
 
 // 404 handler
